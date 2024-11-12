@@ -22,12 +22,12 @@ public class RabbitMQConfig {
 	
 	@Bean
 	public Queue queue() {
-		return new Queue("queue");
+		return new Queue(queue);
 	}
 	
 	@Bean
 	public TopicExchange exchange() {
-		return new TopicExchange("sdm_exchange");
+		return new TopicExchange(exchange);
 	}
 	
 	public Binding binding() {

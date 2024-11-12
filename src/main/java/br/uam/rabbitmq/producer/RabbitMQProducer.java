@@ -1,4 +1,4 @@
-package br.uam.rabbitmq.publisher;
+package br.uam.rabbitmq.producer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
