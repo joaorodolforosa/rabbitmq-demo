@@ -23,5 +23,6 @@ public class MessageController {
 		producer.sendMessage(message);
 		return ResponseEntity.ok("Mensagem enviada para o RabbitMQ...");
 	}
+	
 
 }

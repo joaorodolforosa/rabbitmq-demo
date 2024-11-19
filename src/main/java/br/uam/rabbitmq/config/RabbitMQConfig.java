@@ -46,6 +46,7 @@ public class RabbitMQConfig {
         return new TopicExchange(exchange);
     }
     
+    @Bean
     public Binding binding() {
         return BindingBuilder
                 .bind(queue())
@@ -53,6 +54,7 @@ public class RabbitMQConfig {
                 .with(routingKey);
     }
     
+    @Bean
     public Binding jsonBinding() {
         return BindingBuilder
                 .bind(jsonQueue())
